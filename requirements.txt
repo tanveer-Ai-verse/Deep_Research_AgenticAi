@@ -1,6 +1,5 @@
+google-genai
 pydantic
-python-dotenv
-openai
-openai-agents
 streamlit
+python-dotenv
 requests
