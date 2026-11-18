@@ -20,11 +20,12 @@ class ModelSettings:
         self.tool_choice = tool_choice
 
 class Agent:
-    def __init__(self, name: str, instructions: str = "", model: str = MODEL_NAME, tools: list = None, model_settings=None):
+    def __init__(self, name: str, instructions: str = "", model: str = MODEL_NAME, tools: list = None, output_type=None, model_settings=None):
         self.name = name
         self.instructions = instructions
         self.model = model if isinstance(model, str) else MODEL_NAME
         self.tools = tools or []
+        self.output_type = output_type
         self.model_settings = model_settings
 
 class RunResult:
